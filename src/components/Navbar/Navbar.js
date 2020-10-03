@@ -2,17 +2,13 @@ import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import logo from '../../assets/logo.png';
+import './Navbar.css';
 
 const NavBar = () => (
 	<Navbar fluid='true' collapseOnSelect expand='lg'>
 		<LinkContainer to='/'>
 			<Navbar.Brand>
-				<img
-					src={logo}
-					style={{ width: '175px' }}
-					className='App-logo'
-					alt='logo'
-				/>
+				<img src={logo} className='App-logo' alt='logo' />
 			</Navbar.Brand>
 		</LinkContainer>
 		<Navbar.Toggle aria-controls='responsive-navbar-nav' />
@@ -27,8 +23,11 @@ const NavBar = () => (
 				<LinkContainer to='/tutoring'>
 					<Nav.Link>Tutoring</Nav.Link>
 				</LinkContainer>
+				<LinkContainer to='/register'>
+					<Nav.Link>Register</Nav.Link>
+				</LinkContainer>
 				<LinkContainer to='/calendar'>
-					<Nav.Link>Calendar</Nav.Link>
+					<Nav.Link>Events</Nav.Link>
 				</LinkContainer>
 				<LinkContainer to='/contactus'>
 					<Nav.Link>Contact Us</Nav.Link>
