@@ -51,7 +51,7 @@ class Tutoring extends Component {
                     </Row>
 				</Container>
                 <Container>
-                    <h3 style={{ marginTop: '1.8em', textAlign: 'center' }}>Tutoring Available For</h3>
+                    <h1 style={{ marginTop: '1.8em', textAlign: 'center' }}>Tutoring Available For</h1>
 					<Row>
 						<div>
 							<div className='row1'><p>COSC 1360</p></div>
@@ -64,7 +64,7 @@ class Tutoring extends Component {
 					</Row>
                 </Container>
                 <Container fluid className='tutoringCard'>
-                    <h3 style={{ marginTop: '1.8em' }}>Tutoring is Possible Because of</h3>
+                    <h1 style={{ marginTop: '1.8em' }}>Tutoring is Possible Because of</h1>
 					<Row className='cnt'>
 						<div className='officerImages'>
 							{tutors.map((tutor) =>

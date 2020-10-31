@@ -10,10 +10,12 @@ const Tutor = ({ tutors }) => {
                 <Col>
                     <div className='tutors'>
                         <div>
-                           <a style={{alignItems: 'left', marginRight:'10px'}} href={tutors.linkedin}><img src={LinkedIn}></img></a>
-                           {tutors.name}
+                           <img style={{alignItems: 'left', marginRight:'10px', marginBottom: '10px'}} src={LinkedIn}></img>
+                           {tutors.prioritize ? <span style={{color: '#ECD00A' }}>{tutors.name}</span> : <span>{tutors.name}</span>}
                         </div>
-                        {tutors.courses}
+                        {tutors.courses.map((course, index) => (
+                            <div class="cardSubjects">{course}</div>
+                        ))}
                     </div>
                 </Col>
             </Row>
