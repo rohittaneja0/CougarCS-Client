@@ -10,8 +10,8 @@ const Tutor = ({ tutors }) => {
                 <Col>
                     <div className='tutors'>
                         <div className="tutorName">
-                            <img style={{ alignItems: 'left', marginRight: '10px', marginBottom: '10px' }} src={LinkedIn}></img>
-                            {tutors.prioritize ? <span style={{ color: '#ECD00A' }}>{tutors.name}</span> : <span>{tutors.name}</span>}
+                            <img src={LinkedIn}></img>
+                            {tutors.prioritize ? <p style={{ color: '#ECD00A' }}>{tutors.name}</p> : <p>{tutors.name}</p>}
                         </div>
                         <div className="tutorCourse">
                             {tutors.courses.map((course, index) => (
