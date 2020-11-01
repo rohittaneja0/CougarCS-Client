@@ -45,8 +45,7 @@ class Tutoring extends Component {
                                 <Button variant='' target='_blank' className='DiscordButton' onClick={(e) => {e.preventDefault();
                                     window.open('https://discord.gg/eXMqUz', '_blank')}}>
                                         <img src={discordIcon} className='DiscordIcon'></img> Join Discord</Button>
-                                <Button variant="outline-danger" className='TutorButton'>Become a Tutor</Button>{' '}
-                            </div>
+                                <Button variant='outline-danger' className='TutorButton' href='mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application' >Become a Tutor</Button>                            </div>
 						</Col>
                     </Row>
 				</Container>
@@ -63,15 +62,20 @@ class Tutoring extends Component {
 						</div>
 					</Row>
                 </Container>
-                <Container fluid className='tutoringCard'>
+                <Container fluid>
                     <h1 style={{ marginTop: '1.8em' }}>Tutoring is Possible Because of</h1>
-					<Row className='cnt'>
-						<div className='officerImages'>
+					<Row>
+						<div className='TutoringGrid'>
 							{tutors.map((tutor) =>
 								<Tutor tutors={tutor} key={tutor.id} />
 							)}
 						</div>
 					</Row>
+                    <row>
+                        <h5 style={{textAlign: "center"}}>Are you interested in tutoring for CougarCS? <br/>
+                        <Button variant='outline-danger' className='TutorButton' style={{marginTop: '50px', marginBottom: '350px'}} href='mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application' >Become a Tutor</Button>
+                        </h5>
+                    </row>
                 </Container>
             </div>
         );

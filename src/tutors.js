@@ -10,7 +10,7 @@ const tutors = [
       id: 2,
       name: 'Alex Wong',
       linkedin: '#',
-      courses: ['COSC1306', 'COSC1430', 'COSC2430', 'COSC3360', 'COSCTEST'],
+      courses: ['COSC1306', 'COSC1430', 'COSC2430', 'COSC3360'],
       prioritize: false
     },
     {
