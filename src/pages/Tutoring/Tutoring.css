@@ -22,11 +22,6 @@
   height: 30px;
 }
 
-.cnt {
-  display: flex;
-  justify-content: center;
-}
-
 .tutoringCard {
   text-align: center;
   padding: 0 3rem 0;
