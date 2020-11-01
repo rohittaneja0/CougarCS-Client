@@ -45,10 +45,10 @@
 }
 
 .TutoringGrid{
-    padding: 5em;
+    padding: 4em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-column-gap: 1.5em;
-    grid-row-gap: 1em;
     row-gap: 1em;
+    width: 100%;
 }

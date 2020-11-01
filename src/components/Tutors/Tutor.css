@@ -1,26 +1,30 @@
 .tutors {
-    padding: 1.3em;
-	margin-bottom: 30px;
-	background-color: #F7F7F7;
+	background-color: #f5efef;
 	border-radius: 7px;
-	text-align: left;
-	overflow: hidden;
-	position: relative;
-	height: 175px;
+	height: 15em;
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
 }
 
-.tutorCard {
-    padding: 0 3rem 0;
+.tutors .tutorName{
+	display: flex;
+	padding: .5em;
+	font-size: larger;
+	font-weight: bolder;
+}
+
+.tutors .tutorCourse {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+	column-gap: .5em;
+	row-gap: 1em;
 }
 
 .cardSubjects {
-	background-color: #C4C4C4;
+	background-color: #ddd1d1;
 	padding: .5em;
-	border-radius: 32px;
-	margin: 0px 7px 7px 0px;
-	color: white;
-	display: inline-block;
-	vertical-align: middle;
-	size: 16px;
-	font-weight: 300;
+	border-radius: 30px;
+	color: rgb(25, 11, 11);
+	text-align: center;
 }
