@@ -1,19 +1,30 @@
+.Tutor-Buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .Tutor-Buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+}
+
 .DiscordButton {
   background: #7289da;
   border-radius: 7px;
-  margin-right: 34px;
-  width: 10rem;
-  height: 50px;
   font-weight: bolder;
   color: white;
-  padding-left: 10px;
+}
+
+.DiscordButton:hover {
+  background: #5c6ffa;
+  color: white;
 }
 
 .TutorButton {
   border-radius: 7px;
-  margin-right: 34px;
-  width: 10rem;
-  height: 50px;
   font-weight: bolder;
 }
 

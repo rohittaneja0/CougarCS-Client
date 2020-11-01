@@ -6,7 +6,10 @@ import tutors from "../../tutors";
 import Tutor from "../../components/Tutors/Tutor";
 import { Col, Container, Row } from "react-bootstrap";
 import "./Tutoring.css";
-import Carousel from "@brainhubeu/react-carousel";
+import Carousel, {
+  slidesToShowPlugin,
+  slidesToScrollPlugin,
+} from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
 const Tutoring = () => {
@@ -39,7 +42,7 @@ const Tutoring = () => {
                 tutors will contact you within 24 - 48 hours.
               </p>
             </div>
-            <div>
+            <div className="Tutor-Buttons">
               <Button
                 variant=""
                 target="_blank"
@@ -55,7 +58,6 @@ const Tutoring = () => {
               <Button variant="outline-danger" className="TutorButton">
                 Become a Tutor
               </Button>
-              <div></div>
             </div>
           </Col>
           <Col md="6" className="order-md-2">
@@ -75,13 +77,31 @@ const Tutoring = () => {
         <h3 className="my-4 text-center">Tutoring is Possible Because of</h3>
         <Row>
           {isDesktop ? (
-            <div className="officerImages">
+            <div>
               {tutors.map((tutor) => (
                 <Tutor tutors={tutor} key={tutor.id} />
               ))}
             </div>
           ) : (
-            <Carousel>
+            <Carousel
+              plugins={[
+                "centered",
+                "infinite",
+                "arrows",
+                {
+                  resolve: slidesToShowPlugin,
+                  options: {
+                    numberOfSlides: 2,
+                  },
+                },
+                {
+                  resolve: slidesToScrollPlugin,
+                  options: {
+                    numberOfSlides: 2,
+                  },
+                },
+              ]}
+            >
               {tutors.map((tutor) => (
                 <Tutor tutors={tutor} key={tutor.id} />
               ))}
