@@ -1,3 +1,8 @@
+.Tutoring-Description {
+  text-align: "justify";
+  max-width: 470px;
+}
+
 .Tutor-Buttons {
   display: flex;
   gap: 1rem;
@@ -8,6 +13,9 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+  }
+  .Tutoring-Description {
+    text-align: center;
   }
 }
 
@@ -20,9 +28,7 @@
 
 .TutorButton {
   border-radius: 7px;
-  margin-right: 34px;
-  width: 190px;
-  padding: 10px 0px 10px 0px;
+  padding: 6px 12px;
   font-weight: bolder;
 }
 

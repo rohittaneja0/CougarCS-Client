@@ -31,7 +31,7 @@ const Tutoring = () => {
           <Col md="6">
             <div className="order-md-0" className="tutoring">
               <h1>Tutoring</h1>
-              <p style={{ textAlign: "justify", maxWidth: 470 }}>
+              <p className="Tutoring-Description">
                 CougarCS offers weekly tutoring time slots for many of our
                 degree's toughest classes. If you need help in your coursework,
                 please do not hesitate to reach out to our tutoring team! Email{" "}
