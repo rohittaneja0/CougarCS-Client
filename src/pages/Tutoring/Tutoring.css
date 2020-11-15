@@ -19,11 +19,11 @@
 }
 
 .TutorButton {
-    border-radius: 7px;
-    margin-right: 34px;
-    width: 190px;
-    padding: 10px 0px 10px 0px;
-    font-weight: bolder;
+  border-radius: 7px;
+  margin-right: 34px;
+  width: 190px;
+  padding: 10px 0px 10px 0px;
+  font-weight: bolder;
 }
 
 .DiscordButton:hover {
@@ -37,14 +37,14 @@
 }
 
 .row1 {
-    display: inline-block;
-    text-align: center;
-    padding-top: 15px;
-    background: #FEE7E7;
-    width: 152px;
-    height: 54px;
-    border-radius: 4px;
-    margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  padding-top: 15px;
+  background: #fee7e7;
+  width: 152px;
+  height: 54px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
 .DiscordIcon {
   width: 30px;
@@ -77,11 +77,16 @@
   padding-top: 1em;
 }
 
-.TutoringGrid{
-    padding: 4em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-column-gap: 1.5em;
-    row-gap: 1em;
-    width: 100%;
+.TutoringGrid {
+  padding: 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 1.5em;
+  row-gap: 1em;
+  width: 100%;
+}
+
+.carousel-card {
+  max-width: 300px;
+  min-width: 300px;
 }

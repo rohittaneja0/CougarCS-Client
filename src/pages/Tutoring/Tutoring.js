@@ -77,36 +77,20 @@ const Tutoring = () => {
         <h3 className="my-4 text-center">Tutoring is Possible Because of</h3>
         <Row>
           {isDesktop ? (
-            <div className='TutoringGrid'>
+            <div className="TutoringGrid">
               {tutors.map((tutor) => (
                 <Tutor tutors={tutor} key={tutor.id} />
               ))}
             </div>
           ) : (
-              <Carousel
-                plugins={[
-                  "centered",
-                  "infinite",
-                  "arrows",
-                  {
-                    resolve: slidesToShowPlugin,
-                    options: {
-                      numberOfSlides: 2,
-                    },
-                  },
-                  {
-                    resolve: slidesToScrollPlugin,
-                    options: {
-                      numberOfSlides: 2,
-                    },
-                  },
-                ]}
-              >
-                {tutors.map((tutor) => (
+            <Carousel>
+              {tutors.map((tutor) => (
+                <div className="carousel-card">
                   <Tutor tutors={tutor} key={tutor.id} />
-                ))}
-              </Carousel>
-            )}
+                </div>
+              ))}
+            </Carousel>
+          )}
         </Row>
       </Container>
     </div>
