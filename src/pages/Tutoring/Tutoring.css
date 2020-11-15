@@ -1,45 +1,62 @@
-.Tutoring-Description {
+.tutoring-title {
+  text-align: left;
+}
+
+.tutoring-description {
   text-align: "justify";
   max-width: 470px;
 }
 
-.Tutor-Buttons {
+.tutor-buttons {
   display: flex;
   gap: 1rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .Tutor-Buttons {
+  .tutoring-title {
+    text-align: center;
+  }
+
+  .tutoring-description {
+    text-align: center;
+  }
+  .tutor-Buttons {
     display: flex;
     gap: 1rem;
     justify-content: center;
   }
-  .Tutoring-Description {
-    text-align: center;
-  }
 }
 
-.DiscordButton {
+.discord-button {
   background: #7289da;
   border-radius: 7px;
   font-weight: bolder;
   color: white;
 }
 
-.TutorButton {
-  border-radius: 7px;
-  padding: 6px 12px;
-  font-weight: bolder;
+.discord-icon {
+  width: 30px;
+  height: 30px;
 }
 
-.DiscordButton:hover {
+.tutoring-discord-description {
+  text-align: center;
+  color: rgb(97, 97, 97);
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.discord-button:hover {
   background: #5c6ffa;
   color: white;
 }
 
-.TutorButton {
+.tutor-button {
   border-radius: 7px;
+  padding: 6px 12px;
+  max-height: 45px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .row1 {
@@ -51,15 +68,6 @@
   height: 54px;
   border-radius: 4px;
   margin: 0 auto;
-}
-.DiscordIcon {
-  width: 30px;
-  height: 30px;
-}
-
-.tutoringCard {
-  text-align: center;
-  padding: 0 3rem 0;
 }
 
 .course-list {
@@ -83,10 +91,10 @@
   padding-top: 1em;
 }
 
-.TutoringGrid {
+.tutoring-grid {
   padding: 4em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 1.5em;
   row-gap: 1em;
   width: 100%;
@@ -95,4 +103,21 @@
 .carousel-card {
   max-width: 300px;
   min-width: 300px;
+  max-height: 240px;
+  min-height: 240px;
+}
+
+.tutor-join-title {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tutor-join-button-bottom {
+  border-radius: 7px;
+  padding: 6px 12px;
+  max-height: 45px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 40px;
 }

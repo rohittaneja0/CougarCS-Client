@@ -28,10 +28,13 @@ const Tutoring = () => {
     <div>
       <Container fluid>
         <Row>
+          <Col md="6" className="order-md-2">
+            <img src={Tutoring1} alt="Tutoring 2 svg" className="img-fluid" />
+          </Col>
           <Col md="6">
             <div className="order-md-0" className="tutoring">
-              <h1>Tutoring</h1>
-              <p className="Tutoring-Description">
+              <h1 className="tutoring-title">Tutoring at CougarCS</h1>
+              <p className="tutoring-description">
                 CougarCS offers weekly tutoring time slots for many of our
                 degree's toughest classes. If you need help in your coursework,
                 please do not hesitate to reach out to our tutoring team! Email{" "}
@@ -42,26 +45,32 @@ const Tutoring = () => {
                 tutors will contact you within 24 - 48 hours.
               </p>
             </div>
-            <div className="Tutor-Buttons">
+            <div className="tutor-buttons">
+              <div>
+                <Button
+                  variant=""
+                  target="_blank"
+                  className="discord-button  "
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open("https://discord.gg/eXMqUz", "_blank");
+                  }}
+                >
+                  <img src={discordIcon} className="discord-icon mr-2" />
+                  Join Discord
+                </Button>
+                <p className="tutoring-discord-description">
+                  Tutoring is provided via discord
+                </p>
+              </div>
               <Button
-                variant=""
-                target="_blank"
-                className="DiscordButton  "
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open("https://discord.gg/eXMqUz", "_blank");
-                }}
+                variant="outline-danger"
+                className="tutor-button"
+                href="mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application"
               >
-                <img src={discordIcon} className="DiscordIcon mr-2" />
-                Join Discord
-              </Button>
-              <Button variant="outline-danger" className="TutorButton">
                 Become a Tutor
               </Button>
             </div>
-          </Col>
-          <Col md="6" className="order-md-2">
-            <img src={Tutoring1} alt="Tutoring 2 svg" className="img-fluid" />
           </Col>
         </Row>
 
@@ -77,7 +86,7 @@ const Tutoring = () => {
         <h3 className="my-4 text-center">Tutoring is Possible Because of</h3>
         <Row>
           {isDesktop ? (
-            <div className="TutoringGrid">
+            <div className="tutoring-grid">
               {tutors.map((tutor) => (
                 <Tutor tutors={tutor} key={tutor.id} />
               ))}
@@ -92,6 +101,18 @@ const Tutoring = () => {
             </Carousel>
           )}
         </Row>
+        <div className="text-center">
+          <h2 className="tutor-join-title">
+            Are you interested in tutoring for CougarCS?
+          </h2>
+          <Button
+            variant="outline-danger"
+            className="tutor-join-button-bottom"
+            href="mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application"
+          >
+            Become a Tutor
+          </Button>
+        </div>
       </Container>
     </div>
   );
