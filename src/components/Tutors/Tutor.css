@@ -1,7 +1,7 @@
 .tutors {
 	background-color: #f5efef;
 	border-radius: 7px;
-	height: 15em;
+	height: 20em;
 	display: flex;
 	flex-direction: column;
 	padding: 2em;
@@ -19,7 +19,6 @@
 	margin-left: 1.5em;
 	margin-bottom: 0;
 }
-
 
 .tutors .tutorCourse {
 	display: grid;

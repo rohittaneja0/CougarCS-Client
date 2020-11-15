@@ -28,9 +28,12 @@ const Tutoring = () => {
     <div>
       <Container fluid>
         <Row>
+        <Col md="6" className="order-md-2">
+            <img src={Tutoring1} alt="Tutoring 2 svg" className="img-fluid" />
+          </Col>
           <Col md="6">
             <div className="order-md-0" className="tutoring">
-              <h1>Tutoring</h1>
+              <h1 style={{textAlign: "left"}}>Tutoring</h1>
               <p style={{ textAlign: "justify", maxWidth: 470 }}>
                 CougarCS offers weekly tutoring time slots for many of our
                 degree's toughest classes. If you need help in your coursework,
@@ -55,13 +58,10 @@ const Tutoring = () => {
                 <img src={discordIcon} className="DiscordIcon mr-2" />
                 Join Discord
               </Button>
-              <Button variant="outline-danger" className="TutorButton">
+              <Button variant="outline-danger" className="TutorButton" href='mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application'>
                 Become a Tutor
               </Button>
             </div>
-          </Col>
-          <Col md="6" className="order-md-2">
-            <img src={Tutoring1} alt="Tutoring 2 svg" className="img-fluid" />
           </Col>
         </Row>
 
@@ -107,6 +107,14 @@ const Tutoring = () => {
                 ))}
               </Carousel>
             )}
+        </Row>
+        <Row>
+          <div className="TutorButtonBottom" >
+            <h2>Are you interested in tutoring for CougarCS?</h2>
+            <Button variant="outline-danger" className="TutorButton" href='mailto:tutoring@CougarCS.com?subject=CougarCS Tutor Application'>
+                Become a Tutor
+            </Button>
+          </div>
         </Row>
       </Container>
     </div>

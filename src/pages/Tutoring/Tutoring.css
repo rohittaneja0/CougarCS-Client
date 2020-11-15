@@ -34,6 +34,7 @@
 .TutorButton {
   border-radius: 7px;
   font-weight: bolder;
+  text-align: center;
 }
 
 .row1 {
@@ -84,4 +85,19 @@
     grid-column-gap: 1.5em;
     row-gap: 1em;
     width: 100%;
+}
+
+.TutoringGrid{
+    padding: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 1.5em;
+    row-gap: 1em;
+    width: 100%;
+}
+
+.TutorButtonBottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
