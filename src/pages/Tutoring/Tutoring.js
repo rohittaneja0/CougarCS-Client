@@ -26,7 +26,7 @@ const Tutoring = () => {
 
   return (
     <div>
-      <Container fluid>
+			<section className="container-left">
         <Row>
           <Col md="6" className="order-md-2">
             <img src={Tutoring1} alt="Tutoring 2 svg" className="img-fluid" />
@@ -73,6 +73,8 @@ const Tutoring = () => {
             </div>
           </Col>
         </Row>
+			</section>
+      <Container fluid>
 
         <h3 className="my-4 text-center">Tutoring Available For</h3>
         <div className="course-list">
