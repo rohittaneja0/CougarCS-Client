@@ -1,10 +1,18 @@
+.tutoring-info-group {
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
 .tutoring-title {
   text-align: left;
+  font-family: Poppins;
+  font-style: normal;
+  margin-bottom: 25px;
 }
 
 .tutoring-description {
   text-align: "justify";
-  max-width: 470px;
+  max-width: 490px;
 }
 
 .tutor-buttons {
@@ -13,12 +21,19 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .tutoring-info-group {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
   .tutoring-title {
     text-align: center;
+    margin-left: 0px;
   }
 
   .tutoring-description {
     text-align: center;
+    margin-left: 0px;
   }
   .tutor-Buttons {
     display: flex;
@@ -35,7 +50,7 @@
 }
 
 .discord-icon {
-  width: 30px;
+  width: 25px;
   height: 30px;
 }
 
@@ -59,10 +74,15 @@
   text-align: center;
 }
 
+.tutoring-title-middle {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
 .row1 {
   display: inline-block;
   text-align: center;
-  padding-top: 15px;
   background: #fee7e7;
   width: 152px;
   height: 54px;
@@ -76,7 +96,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 30px;
   margin: 0 auto;
 }
 
@@ -98,6 +118,7 @@
   grid-column-gap: 1.5em;
   row-gap: 1em;
   width: 100%;
+  padding-top: 0px;
 }
 
 .carousel-card {
@@ -110,14 +131,12 @@
 .tutor-join-title {
   font-size: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .tutor-join-button-bottom {
   border-radius: 7px;
-  padding: 6px 12px;
-  max-height: 45px;
+  width: 150px;
   font-weight: bolder;
   text-align: center;
-  margin-bottom: 40px;
 }
